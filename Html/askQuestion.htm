@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GreenBox</title>
+
+    <link rel="icon" href="../Resourse/webicon.png">
+    <!-- <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/homeStyle.css">
+    <script src="../JS/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../CSS/homeStyle.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="../Resourse/logo.svg" alt="image logo" class="pr-5 navbar-brand">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active mt-3 col-md-12">
+                    <form class="form-inline my-2 my-lg-0 row">
+                        <input class="form-control mr-sm-2 col-9 " type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0 col-2" type="submit"><i class="fa fa-search"
+                                aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </li>
+                <li class="nav-item mt-3">
+                    <button class="btn btn-primary ml-5 " type="submit">Ask Question</button>
+                </li>
+                <li class="nav-item mt-2">
+                    <a class="nav-link" href="#">
+                        <img src="../Resourse/goal.png" alt="image" style="height:40px;" class="mt-0 ml-1">
+                    </a>
+                </li>
+                <li class="nav-item mt-2">
+                    <a class="nav-link disabled" href="#">
+                        <img src="../Resourse/notification.png" alt="image" style="height:40px;">
+                    </a>
+                </li>
+                <li class="nav-item mt-3">
+                    <img src="../Resourse/profile-pic.jpg" alt="image" style="height:40px;width: 40px;;border-radius: 50%;">
+                </li>
+                <li class="nav-item dropdown mt-4 ml-1 col-md-4 ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Vattanac Sim
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Start filter -->
+    <div class="row offset-md-2 mt-5">
+        <div class="dropdown pl-2">
+            <h4> Make a Question</h4>
+        </div>
+    </div>
+
+    <!-- End filter -->
+
+    <!-- Start Content -->
+    <div class="row mt-2">
+        <!-- Start collumn1 -->
+        <div class="col-md-10 offset-md-1">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <!-- Start card -->
+                    <div class="card col-12 mt-4 mb-3">
+                        <div class="card-body mt-0 pt-3">
+                            <div class="row">
+                                <div class="col-10 offset-1">
+                                    <form>
+                                        <label for="title">Title</label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" aria-label="Text input with checkbox">
+                                        </div>
+                                        <label for="title">Tag</label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" aria-label="Text input with checkbox">
+                                        </div>
+                                        <label for="title">Image</label>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Upload</span>
+                                            </div>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                            </div>
+                                        </div>
+                                        <label for="title">Desciption</label>
+                                        <div class="input-group mb-3">
+                                            <textarea rows="20" class="form-control" aria-label="Text input with checkbox "></textarea>
+                                        </div>
+                                        <div class="input-group">
+                                            <button class="btn btn-outline-primary my-2 my-sm-0 col-2 offset-7" type="submit">
+                                                Cancel
+                                            </button>
+                                            <button class="btn btn-outline-success bg-primary text-white my-2 my-sm-0 col-2 ml-2" type="submit">
+                                                Submit
+                                            </button>
+
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End card -->
+
+
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+        <!-- End collumn1 -->
+
+    </div>
+    <!-- End Content-->
+    <!-- Start footer  -->
+    <div class="row bg-dark">
+        <div class="col-12">
+            <div class="row text-white pt-5 pb-5">
+                <div class="col-md-3 pl-5 offset-md-1">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../Resourse/logo.svg" alt="image logo" class="pr-5 navbar-brand">
+                        </div>
+                        <div class="col-9">
+                            <h3>FONTROOM</h3>
+                            <h5>Questions</h5>
+                            <h5>Jobs</h5>
+                            <h5>Community</h5>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-2 pl-4">
+                    <h3>PRODUCTS</h3>
+                    <h5>Team</h5>
+                    <h5>Talent</h5>
+                    <h5>Enterprise</h5>
+                    <h5>Engagement</h5>
+                </div>
+                <div class="col-md-2 pl-4">
+                    <h3>COMMAPNY</h3>
+                    <h5>About</h5>
+                    <h5>Press</h5>
+                    <h5>Work Here</h5>
+                    <h5>Legal</h5>
+                    <h5>Privacy Policy</h5>
+                    <h5>Contact Us</h5>
+                </div>
+                <div class="col-md-4 pl-4">
+                    <h3>FRONTROOM COMMUNITY NETWORK</h3>
+                    <div class="pl-4">
+                        <i class="fab fa-facebook-square mr-3" style="font-size:50px"></i>
+                        <i class="fab fa-blogger  mr-3" style="font-size:50px"></i>
+                        <i class="fab fa-github  mr-3" style="font-size:50px"></i>
+                        <i class="fas fa-globe  mr-3" style="font-size:50px"></i>
+                        <i class="fab fa-youtube  mr-3" style="font-size:50px"></i>
+                    </div>
+                    <p class="pl-4 mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+                        dicta
+                        porro nostrum fuga similique debitis neque consectetur vitae, placeat, a incidunt.
+                        Quisquam,
+                        quae. Quos, sint! Nemo, fugit corrupti? Reiciendis, laborum!</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End footer  -->
+
+
+</body>
+
+</html>
